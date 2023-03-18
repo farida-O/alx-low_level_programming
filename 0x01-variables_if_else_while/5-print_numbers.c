@@ -9,8 +9,8 @@ int main(void)
 int i = 0;
 for (; i<=10; i++)
 {
-printf('%d',i);
+putchar('%d',i);
 }
-printf('\n');
+putchar('\n');
 return (0);
 }
