@@ -2,7 +2,7 @@
 #include "main.h"
 /**
  * _abs - Determine absolute of a value
- * Description: 
+ * Description:
  * @n : input value
  * Return: abs value
  */
