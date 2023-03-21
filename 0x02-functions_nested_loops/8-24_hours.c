@@ -24,8 +24,12 @@ _putchar(i3);
 _putchar(':');
 _putchar(i2);
 _putchar(i1);
+_putchar('\n');
 }
+i1 = '0';
 }
+i2 = '0';
 }
+i3 = '0';
 }
 }
