@@ -9,7 +9,7 @@ int main(void)
 {
 char c[] = "_putchar";
 int i =0;
-for (;i<strlen(c);i++)
+for (;i < (int)strlen(c);i++)
 {
 _putchar(c[i]);
 }
