@@ -1,3 +1,4 @@
+#include <stdlib.h>
 #include "main.h"
 /**
  * print_last_digit - last digit
