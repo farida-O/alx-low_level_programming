@@ -1,8 +1,8 @@
-#include <string>
+#include <string.h>
 #include "main.h"
 /**
  * main - Entry point
- * Description: print alphabets
+ * Description: print string
  * Return: Always 0
  */
 int main(void)
