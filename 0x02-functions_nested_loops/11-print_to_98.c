@@ -1,5 +1,7 @@
 #include <stdlib.h>
 #include "main.h"
+#include <stdio.h>
+#include <unistd.h>
 /**
  * print_to_98 - print numbers to 98
  * Description:
@@ -10,9 +12,10 @@ void print_to_98(int n)
 {
 int last_digit;
 int plus = +1;
-if (n > 98)
+char str[9]; 
+if (n < 0)
 plus = -1;
-while (n != 98)
+while(n != 98)
 {
 if (abs(n) > 9)
 {
@@ -20,10 +23,8 @@ if (n < 0)
 {
 _putchar('-');
 }
-last_digit = (int)(n / 10);
-_putchar('0' + abs(last_digit));
-last_digit = n -  last_digit * 10;
-_putchar('0' + abs(last_digit));
+sprintf(str, "%d", abs(n));
+write(STDOUT_FILENO, str, sizeof(str));
 }
 else
 {
@@ -35,7 +36,7 @@ _putchar('0' + abs(n));
 }
 _putchar(',');
 _putchar(' ');
-n = n + plus;
+n=n+plus;
 }
 _putchar('9');
 _putchar('8');
