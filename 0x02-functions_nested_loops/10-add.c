@@ -3,6 +3,8 @@
 /**
  * add - add two numbers
  * Description:
+ * @a: first number
+ * @b: second number
  * Return: summation
  */
 int add(int a, int b)
