@@ -23,7 +23,10 @@ if (n < 0)
 _putchar('-');
 }
 sprintf(str, "%d", abs(n));
-write(STDOUT_FILENO, str, sizeof(str));
+for (int i = 0; str[i] != '\0'; i++) {
+char c = str[i];
+write(STDOUT_FILENO, &c, 1);
+}
 }
 else
 {
