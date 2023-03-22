@@ -20,7 +20,7 @@ _putchar('-');
 last_digit = (int)(n / 10);
 _putchar('0' + abs(last_digit));
 last_digit = n -  last_digit * 10;
-_putchar('0' + last_digit);
+_putchar('0' + abs(last_digit));
 }
 else
 {
