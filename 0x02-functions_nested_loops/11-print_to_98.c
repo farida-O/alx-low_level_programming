@@ -10,7 +10,6 @@
  */
 void print_to_98(int n)
 {
-int last_digit;
 int plus = +1;
 char str[9]; 
 if (n < 0)
