@@ -12,7 +12,7 @@ void print_to_98(int n)
 {
 int plus = +1;
 char str[9];
-int i = 0
+int i = 0;
 if (n > 98)
 plus = -1;
 while (n != 98)
