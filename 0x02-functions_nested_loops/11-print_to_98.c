@@ -10,7 +10,7 @@ void print_to_98(int n)
 {
 int last_digit;
 int plus = +1;
-if (n < 0)
+if (n > 98)
 plus = -1;
 while (n != 98)
 {
