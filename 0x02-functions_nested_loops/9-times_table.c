@@ -16,6 +16,11 @@ for (; i3 <= 9; i3++)
 {
 n = i3 * i4;
 _putchar('0'+ n);
+if (i3 != 9)
+{
+_putchar(',');
 }
+}
+_putchar('\n');
 }
 }
