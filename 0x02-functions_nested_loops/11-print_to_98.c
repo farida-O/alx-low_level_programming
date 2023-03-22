@@ -8,14 +8,17 @@
  */
 void print_to_98(int n)
 {
-int n;
 int last_digit;
 for (; n <= 98; n++)
 {
 if (n > 9)
 {
+if (n < 0)
+{
+_putchar('-');
+}
 last_digit = (int)(n / 10);
-_putchar('0' + last_digit);
+_putchar('0' + abs(last_digit));
 last_digit = n -  last_digit * 10;
 _putchar('0' + last_digit);
 }
