@@ -12,7 +12,7 @@ int last_digit;
 int plus = +1;
 if (n < 0)
 plus = -1;
-while(n != 98)
+while (n != 98)
 {
 if (abs(n) > 9)
 {
@@ -35,7 +35,7 @@ _putchar('0' + abs(n));
 }
 _putchar(',');
 _putchar(' ');
-n=n+plus;
+n = n + plus;
 }
 _putchar('9');
 _putchar('8');
