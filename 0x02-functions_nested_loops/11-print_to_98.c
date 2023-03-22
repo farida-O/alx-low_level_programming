@@ -33,13 +33,9 @@ _putchar('-');
 }
 _putchar('0' + abs(n));
 }
-if (n != 98)
-{
-_putchar(',');
-_putchar(' ');
-}
 n=n+plus;
 }
-_putchar('98');
+_putchar('9');
+_putchar('8');
 _putchar('\n');
 }
