@@ -2,7 +2,7 @@
 #include "main.h"
 /**
  * times_table - prints times table
- * Description: 
+ * Description:
  * Return: void
  */
 void times_table(void)
@@ -16,17 +16,17 @@ for (; i4 <= 9; i4++)
 i3 = 0;
 for (; i3 <= 9; i3++)
 {
-n = i3 * i4;
+n = i3 *i4;
 if (n > 9)
 {
 last_digit = (int)(n / 10);
-_putchar('0'+ last_digit);
+_putchar('0' + last_digit);
 last_digit = n -  last_digit * 10;
-_putchar('0'+ last_digit);
+_putchar('0' + last_digit);
 }
 else
 {
-_putchar('0'+ n);
+_putchar('0' + n);
 }
 if (i3 != 9)
 {
