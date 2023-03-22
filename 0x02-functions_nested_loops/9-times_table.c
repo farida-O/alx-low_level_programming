@@ -12,6 +12,7 @@ int i3 = 0;
 int n;
 for (; i4 <= 9; i4++)
 {
+i3 = 0;
 for (; i3 <= 9; i3++)
 {
 n = i3 * i4;
@@ -19,7 +20,7 @@ _putchar('0'+ n);
 if (i3 != 9)
 {
 _putchar(',');
-_putchar('\t');
+_putchar(' ');
 }
 }
 _putchar('\n');
