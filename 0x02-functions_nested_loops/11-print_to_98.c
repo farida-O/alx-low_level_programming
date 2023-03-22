@@ -40,5 +40,6 @@ _putchar(' ');
 }
 n=n+plus;
 }
+_putchar('98');
 _putchar('\n');
 }
