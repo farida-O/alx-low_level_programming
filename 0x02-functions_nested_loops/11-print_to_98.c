@@ -24,6 +24,7 @@ if (n < 0)
 _putchar('-');
 }
 sprintf(str, "%d", abs(n));
+i = 0;
 for (; str[i] != '\0'; i++)
 {
 char c = str[i];
