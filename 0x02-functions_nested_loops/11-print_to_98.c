@@ -14,7 +14,7 @@ int plus = +1;
 char str[9]; 
 if (n > 98)
 plus = -1;
-while(n != 98)
+while (n != 98)
 {
 if (abs(n) > 9)
 {
