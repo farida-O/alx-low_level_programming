@@ -1,11 +1,13 @@
-#include <stdio.h>
+#include <stdlib.h>
+#include "main.h"
 /**
- * main - Entry point
- * Description: print alphabets
- * Return: Always 0
+ * add - add two numbers
+ * Description:
+ * Return: summation
  */
-int main(void)
+int add(int a, int b)
 {
-printf("_putchar\n");
-return (0);
+int sum;
+sum = a + b;
+return (sum);
 }
