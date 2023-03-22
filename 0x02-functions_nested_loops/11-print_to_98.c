@@ -12,6 +12,7 @@ void print_to_98(int n)
 {
 int plus = +1;
 char str[9];
+int i = 0
 if (n > 98)
 plus = -1;
 while (n != 98)
@@ -23,7 +24,7 @@ if (n < 0)
 _putchar('-');
 }
 sprintf(str, "%d", abs(n));
-for (int i = 0; str[i] != '\0'; i++) {
+for (; str[i] != '\0'; i++) {
 char c = str[i];
 write(STDOUT_FILENO, &c, 1);
 }
