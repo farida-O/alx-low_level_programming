@@ -24,7 +24,8 @@ if (n < 0)
 _putchar('-');
 }
 sprintf(str, "%d", abs(n));
-for (; str[i] != '\0'; i++) {
+for (; str[i] != '\0'; i++)
+{
 char c = str[i];
 write(STDOUT_FILENO, &c, 1);
 }
