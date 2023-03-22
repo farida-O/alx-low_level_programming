@@ -11,7 +11,7 @@ void print_to_98(int n)
 int last_digit;
 for (; n <= 98; n++)
 {
-if ((n > 9) | (n < 0))
+if (abs(n) > 9)
 {
 if (n < 0)
 {
@@ -24,7 +24,11 @@ _putchar('0' + abs(last_digit));
 }
 else
 {
-_putchar('0' + n);
+if (n < 0)
+{
+_putchar('-');
+}
+_putchar('0' + abs(n));
 }
 if (n != 98)
 {
