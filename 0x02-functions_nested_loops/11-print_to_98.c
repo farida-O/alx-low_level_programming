@@ -33,6 +33,8 @@ _putchar('-');
 }
 _putchar('0' + abs(n));
 }
+_putchar(',');
+_putchar(' ');
 n=n+plus;
 }
 _putchar('9');
