@@ -19,6 +19,7 @@ for (; i3 <= 9; i3++)
 n = i3 *i4;
 if (n > 9)
 {
+_putchar(' ');
 last_digit = (int)(n / 10);
 _putchar('0' + last_digit);
 last_digit = n -  last_digit * 10;
@@ -26,12 +27,16 @@ _putchar('0' + last_digit);
 }
 else
 {
+if (i3 != 0)
+{
+_putchar(' ');
+_putchar(' ');
+}
 _putchar('0' + n);
 }
 if (i3 != 9)
 {
 _putchar(',');
-_putchar(' ');
 }
 }
 _putchar('\n');
