@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * print_numbers - function
- * Description: print alphabets
+ * Description: print numbers
  * return: void
  */
 void print_numbers(void)
