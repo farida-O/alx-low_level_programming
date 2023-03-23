@@ -16,7 +16,7 @@ c = '0';
 }
 if (i > 9)
 {
-_putchar('1');
+_putchar('0');
 }
 _putchar(c);
 c++;
