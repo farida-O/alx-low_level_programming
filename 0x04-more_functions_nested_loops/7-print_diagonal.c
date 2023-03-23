@@ -14,10 +14,10 @@ for (; j < n; j++)
 i = 0;
 for (; i < j; i++)
 {
+_putchar('\n');
 _putchar(' ');
 }
 _putchar('\\');
-_putchar('\n');
 }
 _putchar('\n');
 }
