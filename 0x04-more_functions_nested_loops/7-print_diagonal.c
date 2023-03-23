@@ -11,7 +11,8 @@ int j = 0;
 int i;
 for (; j < n; j++)
 {
-for (i = 0; i < j; i++)
+i = 0;
+for (; i < j; i++)
 {
 _putchar(' ');
 }
