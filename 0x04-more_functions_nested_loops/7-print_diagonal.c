@@ -12,9 +12,9 @@ int i;
 for (; j < n; j++)
 {
 i = 0;
+_putchar('\n');
 for (; i < j; i++)
 {
-_putchar('\n');
 _putchar(' ');
 }
 _putchar('\\');
