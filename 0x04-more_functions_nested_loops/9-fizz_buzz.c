@@ -1,4 +1,5 @@
 #include <unistd.h>
+#include <stdio.h>
 /**
  * main - causes an infinite loop
  * Return: 0
@@ -6,27 +7,23 @@
 int main(void)
 {
 int i = 1;
-int num;
-int l;
-int j;
+int l, j, num;
 char str[10];
 char Fizz[] = "Fizz";
 char Buzz[] = "Buzz";
-char space = ' ';
-char newline = '\n';
 for (; i <= 100; i++)
 {
 if (i%3 == 0)
 {
-write(STDOUT_FILENO, Fizz, 4);
+puts(Fizz);
 if (i % 5 == 0)
 {
-write(STDOUT_FILENO, Buzz, 4);
+puts(Buzz);
 }
 }
 else if (i % 5 == 0)
 {
-write(STDOUT_FILENO, Buzz, 4);
+puts(Buzz);
 }
 else
 {
@@ -43,8 +40,8 @@ for (; l >= 0; l--)
 write(STDOUT_FILENO, &str[l], 1);
 }
 }
-write(1, &space, 1);
+putchar(' ');
 }
-write(1, &newline, 1);
+putchar('\n');
 return (0);
 }
