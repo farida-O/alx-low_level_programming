@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * main - causes an infinite loop
+ * main - print numbers from 1 to 100
  * Return: 0
  */
 int main(void)
