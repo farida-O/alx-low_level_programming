@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include "main.h"
 /**
  * main - print numbers from 1 to 100
  * Return: 0
@@ -24,8 +25,8 @@ else
 {
 printf("%d", i);
 }
-printf(' ');
+_putchar(' ');
 }
-printf('\n');
+_putchar('\n');
 return (0);
 }
