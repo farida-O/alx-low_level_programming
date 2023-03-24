@@ -27,7 +27,14 @@ puts(Buzz);
 }
 else
 {
+if (i > 9)
+{
 printf("%d",i);
+}
+else
+{
+putchar('0'+i);
+}
 }
 putchar(' ');
 }
