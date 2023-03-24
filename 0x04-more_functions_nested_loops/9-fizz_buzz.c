@@ -10,6 +10,8 @@ int main(void)
 int i = 0;
 int num;
 int l;
+int j;
+char str[10];
 char Fizz[] = "Fizz";
 char Buzz[] = "Buzz";
 for (; i <= 100; i++)
@@ -28,7 +30,7 @@ write(STDOUT_FILENO, Buzz, 4);
 }
 else
 {
-int j = 0;
+j = 0;
 num = i;
 while (num > 0) {
 str[j++] = num % 10 + '0';
