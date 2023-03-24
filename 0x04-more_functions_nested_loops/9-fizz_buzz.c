@@ -37,7 +37,8 @@ str[j++] = num % 10 + '0';
 num /= 10;
 }
 l = j - 1;
-for (; l >= 0; l--) {
+for (; l >= 0; l--)
+{
 write(STDOUT_FILENO, &str[l], 1);
 }
 }
