@@ -27,13 +27,17 @@ puts(Buzz);
 }
 else
 {
-if (i > 9)
+j = 0;
+num = i;
+while (num > 0)
 {
-printf("%d",i);
+str[j++] = num % 10 + '0';
+num /= 10;
 }
-else
+l = j - 1;
+for (; l >= 0; l--)
 {
-putchar('0'+i);
+write(STDOUT_FILENO, &str[l], 1);
 }
 }
 putchar(' ');
