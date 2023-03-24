@@ -1,9 +1,10 @@
 #include "main.h"
+#include <unistd.h>
+#include <string.h>
 /**
  * main - causes an infinite loop
  * Return: 0
  */
-
 int main(void)
 {
 int i;
