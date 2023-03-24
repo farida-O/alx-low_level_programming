@@ -38,6 +38,7 @@ for (; l >= 0; l--)
 putchar(str[l]);
 }
 }
+if (i != 100)
 putchar(' ');
 }
 putchar('\n');
