@@ -3,7 +3,7 @@
  * print_square - function that draws a square
  * Description: 
  * @size: the size of the square
- * return: void
+ * Return: void
  */
 void print_square(int size)
 {
