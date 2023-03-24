@@ -9,21 +9,19 @@ int main(void)
 int i = 1;
 int l, j, num;
 char str[10];
-char Fizz[] = "Fizz";
-char Buzz[] = "Buzz";
 for (; i <= 100; i++)
 {
-if (i%3 == 0)
+if (i % 3 == 0)
 {
-puts(Fizz);
+puts("Fizz");
 if (i % 5 == 0)
 {
-puts(Buzz);
+puts("Buzz");
 }
 }
 else if (i % 5 == 0)
 {
-puts(Buzz);
+puts("Buzz");
 }
 else
 {
