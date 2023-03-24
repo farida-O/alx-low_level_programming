@@ -13,15 +13,15 @@ for (; i <= 100; i++)
 {
 if (i % 3 == 0)
 {
-puts("Fizz");
+fputs("Fizz", stdout);
 if (i % 5 == 0)
 {
-puts("Buzz");
+fputs("Buzz", stdout);
 }
 }
 else if (i % 5 == 0)
 {
-puts("Buzz");
+fputs("Buzz", stdout);
 }
 else
 {
@@ -39,7 +39,6 @@ putchar(str[l]);
 }
 }
 putchar(' ');
-fflush(stdout);
 }
 putchar('\n');
 return (0);
