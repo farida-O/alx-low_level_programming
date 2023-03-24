@@ -1,8 +1,8 @@
 #include "main.h"
 /**
- * print_diagonal - function that draws a diagonal line on the terminal
- * Description: print numbers
- * @n: number of times the character \ should be printed
+ * print_square - function that draws a square
+ * Description: 
+ * @size: the size of the square
  * return: void
  */
 void print_square(int size)
