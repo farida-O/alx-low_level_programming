@@ -27,18 +27,7 @@ puts(Buzz);
 }
 else
 {
-j = 0;
-num = i;
-while (num > 0)
-{
-str[j++] = num % 10 + '0';
-num /= 10;
-}
-l = j - 1;
-for (; l >= 0; l--)
-{
-write(STDOUT_FILENO, &str[l], 1);
-}
+printf("%d",i);
 }
 putchar(' ');
 }
