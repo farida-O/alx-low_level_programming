@@ -1,5 +1,5 @@
-#include "main.h"
 #include <unistd.h>
+#include "main.h"
 /**
  * main - causes an infinite loop
  * Return: 0
@@ -13,6 +13,8 @@ int j;
 char str[10];
 char Fizz[] = "Fizz";
 char Buzz[] = "Buzz";
+char space = ' ';
+char newline = '\n';
 for (; i <= 100; i++)
 {
 if (i%3 == 0)
@@ -41,8 +43,8 @@ for (; l >= 0; l--)
 write(STDOUT_FILENO, &str[l], 1);
 }
 }
-_putchar(' ');
+write(1, &space, 1);
 }
-_putchar('\n');
+write(1, &newline, 1);
 return (0);
 }
