@@ -23,7 +23,7 @@ printf("Buzz");
 }
 else
 {
-pritf("%d", i);
+printf("%d", i);
 }
 _putchar(' ');
 }
