@@ -19,12 +19,12 @@ for (; i <= 100; i++)
 if (i%3 == 0)
 {
 write(STDOUT_FILENO, Fizz, 4);
-if (i%5 == 0)
+if (i % 5 == 0)
 {
 write(STDOUT_FILENO, Buzz, 4);
 }
 }
-else if (i%5 == 0)
+else if (i % 5 == 0)
 {
 write(STDOUT_FILENO, Buzz, 4);
 }
@@ -32,7 +32,8 @@ else
 {
 j = 0;
 num = i;
-while (num > 0) {
+while (num > 0)
+{
 str[j++] = num % 10 + '0';
 num /= 10;
 }
