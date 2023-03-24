@@ -35,10 +35,11 @@ num /= 10;
 l = j - 1;
 for (; l >= 0; l--)
 {
-write(STDOUT_FILENO, &str[l], 1);
+putchar(str[l]);
 }
 }
 putchar(' ');
+fflush(stdout);
 }
 putchar('\n');
 return (0);
