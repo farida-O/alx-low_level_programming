@@ -13,8 +13,8 @@ int l = strlen(s);
 char tmp;
 for (; i < l / 2; i++)
 {
-tmp  = s[i];
-s[i] = s[l - i];
-s[l - i] = tmp;
+tmp  = *(s + i);
+*(s + i) = *(s + l - i);
+*(s + l - i) = tmp;
 }
 }
