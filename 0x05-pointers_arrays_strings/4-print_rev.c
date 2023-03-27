@@ -13,4 +13,5 @@ for (; i >= 0; i--)
 {
 putchar(s[i]);
 }
+putchar('\n');
 }
