@@ -9,8 +9,8 @@
  */
 char *_strcpy(char *dest, char *src)
 {
-int i = 0;
-for (; i < strlen(src); i++)
+long int i = 0;
+for (; i < (long int)strlen(src); i++)
 {
 dest[i] = src[i];
 }
