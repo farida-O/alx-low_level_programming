@@ -18,7 +18,7 @@ else
 {
 i = (l - 1) / 2;
 }
-for (; i < l; i += 2)
+for (; i < l; i++)
 {
 putchar(str[i]);
 }
