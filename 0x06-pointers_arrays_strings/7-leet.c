@@ -10,23 +10,23 @@ int i;
 i = 0;
 for (; i < (int)strlen(s); i++)
 {
-if (strstr("Aa", s[i]))
+if (strchr("Aa", s[i]))
 {
 s[i] = '4';
 }
-else if (strstr("Ee", s[i]))
+else if (strchr("Ee", s[i]))
 {
 s[i] = '3';
 }
-else if (strstr("oO", s[i]))
+else if (strchr("oO", s[i]))
 {
 s[i] = '0';
 }
-else if (strstr("tT", s[i]))
+else if (strchr("tT", s[i]))
 {
 s[i] = '7';
 }
-else if (strstr("lL", s[i]))
+else if (strchr("lL", s[i]))
 {
 s[i] = '1';
 }
