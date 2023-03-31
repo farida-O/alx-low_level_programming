@@ -10,7 +10,7 @@ int i;
 i = 0;
 for (; i < (int)strlen(s); i++)
 {
-if (strstr(",;.!?\"(){}", s[i]))
+if (strchr(",;.!?\"(){}", s[i]))
 {
 if (s[i + 1] > 'a')
 {
