@@ -12,7 +12,7 @@ for (; i < (int)strlen(s); i++)
 {
 if (s[i] >= 'a')
 {
-s[i] -= 12;
+s[i] -= 32;
 }
 }
 return (s);
