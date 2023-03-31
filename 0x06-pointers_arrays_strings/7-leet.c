@@ -1,4 +1,5 @@
 #include <string.h>
+#include <stdio.h>
 /**
  * leet - concatenates two strings
  * @s: pointer to a string
@@ -6,29 +7,19 @@
  */
 char *leet(char *s)
 {
-int i;
+int i, j;
+char code[5] = {'4', '3', '0', '7', '1'};
+char *alph[] = {"Aa", "Ee", "Oo", "Tt", "Ll"};
 i = 0;
 for (; i < (int)strlen(s); i++)
 {
-if (strchr("Aa", s[i]))
+j = 0;
+for (; j < 5; j++)
 {
-s[i] = '4';
+if (strchr(alph[j], s[i]))
+{
+s[i] = code[j];
 }
-else if (strchr("Ee", s[i]))
-{
-s[i] = '3';
-}
-else if (strchr("oO", s[i]))
-{
-s[i] = '0';
-}
-else if (strchr("tT", s[i]))
-{
-s[i] = '7';
-}
-else if (strchr("lL", s[i]))
-{
-s[i] = '1';
 }
 }
 return (s);
