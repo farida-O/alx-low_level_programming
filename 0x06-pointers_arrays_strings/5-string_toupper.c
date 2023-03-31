@@ -10,7 +10,7 @@ int i;
 i = 0;
 for (; i < strlen(s); i++)
 {
-if (s[i] > 'a')
+if (s[i] >= 'a')
 {
 s[i] -= 12;
 }
