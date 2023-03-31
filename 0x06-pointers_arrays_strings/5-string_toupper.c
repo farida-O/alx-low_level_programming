@@ -1,4 +1,4 @@
-#include <string>
+#include <string.h>
 #include "main.h"
 /**
  * string_toupper - concatenates two strings
