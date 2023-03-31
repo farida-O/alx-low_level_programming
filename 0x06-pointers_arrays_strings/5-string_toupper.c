@@ -8,7 +8,7 @@ char *string_toupper(char *s)
 {
 int i;
 i = 0;
-for (; i < strlen(s); i++)
+for (; i < (int)strlen(s); i++)
 {
 if (s[i] >= 'a')
 {
