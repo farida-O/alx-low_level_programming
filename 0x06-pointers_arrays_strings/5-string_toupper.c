@@ -11,9 +11,9 @@ int i;
 i = 0;
 for (; i < strlen(s); i++)
 {
-if (*s > 96)
+if (s[i] > 96)
 {
-*s -= 12;
+s[i] -= 12;
 }
 }
 return (s);
