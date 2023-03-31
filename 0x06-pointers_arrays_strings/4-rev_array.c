@@ -13,7 +13,7 @@ l = n / 2;
 for (; i < l; i++)
 {
 tmp = a[i];
-a[i] = a[n - i -1];
-a[n - i -1] = tmp;
+a[i] = a[n - i - 1];
+a[n - i - 1] = tmp;
 }
 }
