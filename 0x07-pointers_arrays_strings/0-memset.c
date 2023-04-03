@@ -1,6 +1,6 @@
 #include <string.h>
 /**
- * _memset - concatenates two strings
+ * _memset -  fills memory with a constant byte
  * @s: pointer to a string
  * @b: bytes' content
  * @n: number of bytes
