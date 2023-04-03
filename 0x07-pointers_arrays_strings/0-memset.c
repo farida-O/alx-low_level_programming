@@ -1,7 +1,9 @@
 #include <string.h>
 /**
- * cap_string - concatenates two strings
+ * _memset - concatenates two strings
  * @s: pointer to a string
+ * @b: bytes' content
+ * @n: number of bytes
  * Return: string
  */
 char *_memset(char *s, char b, unsigned int n)
