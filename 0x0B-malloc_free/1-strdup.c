@@ -11,11 +11,11 @@ char *arr;
 int size = strlen(str);
 int i = 0;
 arr = malloc(size);
-if ((str == 0) || arr == NULL)
+if ((size == 0) || arr == NULL)
 {
 return (NULL);
 }
-for (; i < (int)size; i++)
+for (; i <= (int)size; i++)
 {
 arr[i] = str[i];
 }
