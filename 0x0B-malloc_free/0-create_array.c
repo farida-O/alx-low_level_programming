@@ -14,5 +14,9 @@ for (; i < (int)size; i++)
 {
 arr[i] = c;
 }
+if (size == 0)
+{
+return (NULL);
+}
 return (arr);
 }
