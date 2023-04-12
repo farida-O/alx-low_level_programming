@@ -10,9 +10,9 @@ char *_strdup(const char *str)
 char *arr = NULL;
 unsigned int size = strlen(str);
 int i;
-if (size == 0)
+if (str == NULL)
 {
-return (NULL);
+return (arr);
 }
 arr = malloc(size + 1);
 i = 0;
