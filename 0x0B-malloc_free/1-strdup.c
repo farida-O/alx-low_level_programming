@@ -15,7 +15,7 @@ if ((size == 0) || arr == NULL)
 {
 return (NULL);
 }
-for (; i <= (int)size; i++)
+for (; i < (int)size; i++)
 {
 arr[i] = str[i];
 }
