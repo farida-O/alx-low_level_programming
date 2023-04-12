@@ -12,18 +12,8 @@ unsigned int size = strlen(str);
 int i;
 if (str == NULL)
 {
-str = "";
-}
-arr = malloc(size + 1);
-i = 0;
-if (arr == NULL)
-{
 return (NULL);
 }
-for (; i < (int)size; i++)
-{
-arr[i] = str[i];
-}
-arr[size] = '\0';
+arr = stardup(str);
 return (arr);
 }
