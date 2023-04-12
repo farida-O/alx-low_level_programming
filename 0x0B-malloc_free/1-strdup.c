@@ -10,12 +10,8 @@ char *_strdup(char *str)
 char *arr;
 unsigned int size = strlen(str);
 int i = 0;
-if (str == NULL)
-{
-return (NULL);
-}
 arr = malloc(size + 1);
-if (arr == NULL)
+if ((arr == NULL) || (*str == NULL))
 {
 return (NULL);
 }
