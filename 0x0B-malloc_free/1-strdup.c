@@ -5,14 +5,14 @@
  * @str: string
  * Return:  a pointer to the array or NULL if size = 0
  */
-char *_strdup(const char *str)
+char *_strdup(char *str)
 {
 char *arr = NULL;
 unsigned int size = strlen(str);
 int i;
 if (str == NULL)
 {
-return (arr);
+* str = "";
 }
 arr = malloc(size + 1);
 i = 0;
