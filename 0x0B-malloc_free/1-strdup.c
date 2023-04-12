@@ -10,7 +10,7 @@ char *_strdup(const char *str)
 char *arr = NULL;
 unsigned int size = strlen(str);
 int i;
-if (str == NULL)
+if (size == 0)
 {
 return (NULL);
 }
