@@ -11,7 +11,7 @@ char *arr;
 unsigned int size = strlen(str);
 int i = 0;
 arr = malloc(size + 1);
-if ((size == 1) || (arr))
+if ((size == 1) || (arr == NULL))
 {
 return (NULL);
 }
