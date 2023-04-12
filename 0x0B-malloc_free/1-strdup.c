@@ -8,12 +8,10 @@
 char *_strdup(char *str)
 {
 char *arr = NULL;
-unsigned int size = strlen(str);
-int i;
 if (str == NULL)
 {
 return (NULL);
 }
-arr = stardup(str);
+arr = strdup(str);
 return (arr);
 }
