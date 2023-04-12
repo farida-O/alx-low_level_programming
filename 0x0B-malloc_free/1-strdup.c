@@ -11,10 +11,6 @@ char *arr;
 unsigned int size = strlen(str);
 int i = 0;
 arr = malloc(size + 1);
-if (arr == NULL)
-{
-return (NULL);
-}
 for (; i < (int)size; i++)
 {
 arr[i] = str[i];
