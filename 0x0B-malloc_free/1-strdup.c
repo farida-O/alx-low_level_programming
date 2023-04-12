@@ -15,6 +15,10 @@ if (str == NULL)
 return (NULL);
 }
 arr = malloc(size + 1);
+if (arr == NULL)
+{
+return (NULL);
+}
 for (; i < (int)size; i++)
 {
 arr[i] = str[i];
