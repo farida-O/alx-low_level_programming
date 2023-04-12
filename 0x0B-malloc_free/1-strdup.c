@@ -12,7 +12,7 @@ unsigned int size = strlen(str);
 int i;
 if (str == NULL)
 {
-* str = "";
+str = "";
 }
 arr = malloc(size + 1);
 i = 0;
