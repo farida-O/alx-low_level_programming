@@ -22,12 +22,9 @@ if (arr == NULL)
 {
 return (NULL);
 }
-if (s1) {
+if (s1)
 strcpy(arr, s1);
-}
-
-if (s2) {
+if (s2)
 strcat(arr, s2);
-}
 return (arr);
 }
