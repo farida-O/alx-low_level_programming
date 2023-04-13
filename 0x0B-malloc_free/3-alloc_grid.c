@@ -16,10 +16,10 @@ if (arr == NULL)
 {
 return (NULL);
 }
-for (; i < width; i++)
+for (; i < height; i++)
 {
 arr[i] = malloc(width* sizeof(int));
-for (; j < height; j++)
+for (; j < width; j++)
 {
 arr[i][j] = 0;
 }
