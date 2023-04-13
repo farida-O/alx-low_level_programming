@@ -14,11 +14,12 @@ int j = 0;
 arr = malloc(height * sizeof(int *));
 if (arr == NULL)
 {
+free(arr);
 return (NULL);
 }
 for (; i < height; i++)
 {
-arr[i] = malloc(width* sizeof(int));
+arr[i] = malloc(width * sizeof(int));
 if (arr[i] == NULL)
 {
 i = 0;
