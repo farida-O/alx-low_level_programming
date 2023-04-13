@@ -8,19 +8,23 @@
  */
 char *str_concat(char *s1, char *s2)
 {
+int s_l;
 char *arr = NULL;
-int s_l = strlen(s1);
 if (s1 == NULL)
 {
 s1 = "";
 }
-if (s2 ==NULL)
+if (s2 == NULL)
 {
 s2 = "";
 }
+s_l = strlen(s1);
+arr = malloc(s_l + strlen(s2));
+if (arr == NULL)
+{
+return (NULL);
+}
 arr = strdup(s1);
-arr = arr + s_l;
-arr = strdup(s2);
-arr = arr - s_l;
+arr[s_l] = strdup(s2);
 return (arr);
 }
