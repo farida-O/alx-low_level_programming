@@ -12,7 +12,7 @@ int **arr;
 int i = 0;
 int j = 0;
 arr = malloc(height * sizeof(int *));
-if (arr == NULL)
+if ((arr == NULL) || (width) || (height))
 {
 free(arr);
 return (NULL);
