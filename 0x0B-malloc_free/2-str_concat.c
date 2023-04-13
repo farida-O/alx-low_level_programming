@@ -21,10 +21,6 @@ if (s2 ==NULL)
 s2 = "";
 }
 arr = strdup(s1);
-i = s_l;
-for (; i < (s_l + s_l2); i++)
-{
-arr[i] = s2[i - s_l];
-}
+arr[s_l] = strdup(s2);
 return (arr);
 }
