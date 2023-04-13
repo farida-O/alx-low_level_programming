@@ -17,7 +17,7 @@ if (s2 == NULL)
 {
 s2 = "";
 }
-arr = malloc(strlen(s_l) + strlen(s2) + 1);
+arr = malloc(strlen(s1) + strlen(s2) + 1);
 if (arr == NULL)
 {
 return (NULL);
