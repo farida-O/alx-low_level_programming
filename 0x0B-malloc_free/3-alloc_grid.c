@@ -18,7 +18,7 @@ return (NULL);
 }
 for (; i < width; i++)
 {
-for (; j < width; j++)
+for (; j < height; j++)
 {
 arr[i][j] = 0;
 }
