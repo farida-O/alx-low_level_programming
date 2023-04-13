@@ -24,6 +24,7 @@ if (arr[i] == NULL)
 i = 0;
 for (; i < height; i++)
 free(arr[i]);
+free(arr);
 return (NULL);
 }
 for (; j < width; j++)
