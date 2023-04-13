@@ -22,11 +22,11 @@ if (arr == NULL)
 {
 return (NULL);
 }
-if (s1 != NULL) {
+if (s1 != "") {
 strcpy(arr, s1);
 }
 
-if (s2 != NULL) {
+if (s2 != "") {
 strcat(arr, s2);
 }
 return (arr);
