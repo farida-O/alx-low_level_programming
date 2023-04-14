@@ -21,8 +21,8 @@ return (NULL);
 }
 for (; min <= max; min++)
 {
-    arr[i] = min;
-    i++;
+arr[i] = min;
+i++;
 }
 return (arr);
 }
