@@ -1,7 +1,6 @@
 #include <stdlib.h>
-#include <string.h>
 /**
- * malloc_checked - creates a copy of the string
+ * malloc_checked - allocates memory using malloc
  * @b: string
  * Return: void
  */
@@ -11,4 +10,6 @@ int *arr = NULL;
 arr = malloc(b);
 if (arr == NULL)
 exit(98);
+else
+return (arr);
 }
