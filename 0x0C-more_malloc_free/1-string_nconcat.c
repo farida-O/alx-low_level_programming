@@ -1,4 +1,5 @@
 #include <stdlib.h>
+#include <string.h>
 /**
  * string_nconcat - allocates memory using malloc
  * @s1: string
