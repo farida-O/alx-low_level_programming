@@ -3,9 +3,9 @@
 /**
  * string_nconcat - allocates memory using malloc
  * @s1: string
- * @s2:
- * @n:
- * Return: void
+ * @s2: second string
+ * @n: number of bytes in from the second string
+ * Return: pointer
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
