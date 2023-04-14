@@ -16,7 +16,9 @@ return (NULL);
 }
 arr = malloc(max - min + 1);
 if (arr == NULL)
+{
 return (NULL);
+}
 for (; min <= max; min++)
 {
     arr[i] = min;
