@@ -1,4 +1,5 @@
 #include <stdlib.h>
+#include <stdio.h>
 /**
  * array_range - allocates memory using malloc
  * @min: string
@@ -10,7 +11,9 @@ int *array_range(int min, int max)
 int *arr;
 int i = 0;
 if (min > max)
+{
 return (NULL);
+}
 arr = malloc(max - min + 1);
 if (arr == NULL)
 return (NULL);
