@@ -1,8 +1,8 @@
 #include <stdlib.h>
 /**
- * malloc_checked - allocates memory using malloc
- * @nmemb: string
- * @size: string
+ * _calloc - allocates memory using calloc
+ * @nmemb: number of elements to be allocated
+ * @size:  size of elements
  * Return: void
  */
 void *_calloc(unsigned int nmemb, unsigned int size)
