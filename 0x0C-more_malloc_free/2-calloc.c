@@ -8,6 +8,8 @@
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
 int *arr = NULL;
+if (!size || !nmemb)
+return (NULL);
 arr = calloc(nmemb, size);
 if (arr == NULL)
 return (NULL);
