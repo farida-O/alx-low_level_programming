@@ -10,7 +10,6 @@
 void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 {
 int *arr;
-int i = 0;
 if (old_size == new_size)
 {
 return (ptr);
