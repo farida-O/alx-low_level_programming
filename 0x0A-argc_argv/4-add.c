@@ -1,8 +1,6 @@
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
-#include <ctype.h>
-#include <errno.h>
 /**
  * main - starting point.
  * @argc: arguments counts.
@@ -26,7 +24,7 @@ arg = strtol(argv[i], &ptr, 10);
 if (*ptr)
 {
 printf("Error\n");
-return (1); 
+return (1);
 }
 sum += arg;
 }
