@@ -15,7 +15,7 @@ return (ptr);
 }
 if (ptr == NULL)
 {
-malloc(new_size);
+ptr = malloc(new_size);
 return (ptr);
 }
 if (!new_size)
@@ -23,6 +23,6 @@ if (!new_size)
 free(ptr);
 return (NULL);
 }
-realloc(ptr, new_size);
+ptr = realloc(ptr, new_size);
 return (ptr);
 }
