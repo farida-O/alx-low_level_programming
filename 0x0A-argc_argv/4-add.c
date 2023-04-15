@@ -12,9 +12,9 @@
 int main(int argc, char *argv[])
 {
 char *ptr;
+int arg;
 int i = 1;
 int sum = 0;
-int arg;
 if (argc == 0)
 {
 printf("0\n");
