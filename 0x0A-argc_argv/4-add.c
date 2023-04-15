@@ -2,6 +2,7 @@
 #include <string.h>
 #include <stdlib.h>
 #include <ctype.h>
+#include <errno.h>
 /**
  * main - starting point.
  * @argc: arguments counts.
@@ -10,16 +11,24 @@
  */
 int main(int argc, char *argv[])
 {
-int i = 0;
+char *ptr;
+int i = 1;
 int sum = 0;
-if (argc == 1)
+int arg;
+if (argc == 0)
 {
 printf("0\n");
 return (1);
 }
 for (; i < argc; i++)
 {
-sum += isdigit(atoi(argv[i]));
+arg = strtol(argv[i], &ptr, 10);
+if (*ptr)
+{
+printf("Error\n");
+return (1); 
+}
+sum += arg;
 }
 printf("%d\n", sum);
 return (0);
