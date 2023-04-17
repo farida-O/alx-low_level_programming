@@ -5,6 +5,6 @@
  */
 int main(void)
 {
-prinf("%s", __FILE__);
-    return (0);
+prinf("%s\n", __FILE__);
+return (0);
 }
