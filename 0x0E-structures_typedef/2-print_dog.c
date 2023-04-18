@@ -1,7 +1,7 @@
 #include "dog.h"
 #include <stdio.h>
 /**
- * init_dog - initialize a variable of type struct dog.
+ * print_dog - print the struct dog variables.
  * @d: a pointer to struct.
  * Return: void
  */
