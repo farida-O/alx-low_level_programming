@@ -33,6 +33,6 @@ free(d->owner);
 free(d);
 return (NULL);
 }
-strcpy(d-> owner, owner);
+strcpy(d->owner, owner);
 return (d);
 }
