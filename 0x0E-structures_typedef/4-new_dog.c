@@ -28,6 +28,7 @@ d->age = age;
 d->owner = malloc(sizeof(owner) + 1);
 if (d->owner == NULL)
 {
+free(d->name);
 free(d->owner);
 free(d);
 return (NULL);
