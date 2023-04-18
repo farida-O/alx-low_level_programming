@@ -15,7 +15,7 @@ return;
 (d->age != 0) ? printf("Age: %f\n", d->age) : printf("Age: (nil)\n");
 if (d->owner != NULL)
 {
-printf("Owner: %s\n", d->owner)
+printf("Owner: %s\n", d->owner);
 }
 else
 {
