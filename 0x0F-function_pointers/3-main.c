@@ -21,7 +21,7 @@ exit(98);
 a = atoi(argv[1]);
 b = atoi(argv[3]);
 s = argv[2];
-if ((strcmp(s, "%") || strcmp(s, "/")) && !b)
+if ((!strcmp(s, "%") || !strcmp(s, "/")) && !b)
 {
 printf("Error/n");
 exit(100);
