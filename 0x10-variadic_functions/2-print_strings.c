@@ -13,10 +13,11 @@ va_list ptr;
 va_start(ptr, n);
 for (; i < n; i++)
 {
-if (va_arg(ptr, int) == NULL)
+char *str = va_arg(ptr, char *);
+if (str == NULL)
 printf("(nil)");
 else   
-printf("%s", va_arg(ptr, int));
+printf("%s", str);
 if ((i != n - 1) && (separator != NULL))
 printf("%s", separator);
 }
