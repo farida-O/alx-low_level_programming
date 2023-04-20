@@ -16,7 +16,6 @@ for (; i < n; i++)
 printf("%d", va_arg(ptr, int));
 if ((i != n - 1) && (separator != NULL))
 printf("%s", separator);
-putchar(' ');
 }
 putchar('\n');
 va_end(ptr);
