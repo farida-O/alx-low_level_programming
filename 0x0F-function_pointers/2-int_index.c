@@ -8,17 +8,13 @@
  */
 int int_index(int *array, int size, int (*cmp)(int))
 {
-int flag = 0;
 int i = 0;
-if (cmp != NULL && size > 0)
+if ((cmp != NULL) && (size > 0))
 {
 for (; i < size; i++)
 {
-flag = cmp(array[i]);
-if (flag != 0)
-{
+if (cmp(array[i]) != 0)
 return (i);
-}
 }
 }
 return (-1);
