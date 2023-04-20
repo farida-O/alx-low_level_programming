@@ -12,10 +12,9 @@ unsigned int i = 0;
 va_list ptr;
 va_start(ptr, n);
 if (n == 0)
-{
 return (0);
-}
-for (; i < n; i++) {
+for (; i < n; i++)
+{
 sum += va_arg(ptr, int);
 }
 va_end(ptr);
