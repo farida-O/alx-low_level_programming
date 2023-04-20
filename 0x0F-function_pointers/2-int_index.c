@@ -15,7 +15,7 @@ if (cmp != NULL)
 for (; i < size; i++)
 {
 flag = cmp(array[i]);
-if (flag)
+if (flag != 0)
 {
 return (i);
 }
