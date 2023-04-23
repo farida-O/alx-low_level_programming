@@ -2,7 +2,7 @@
 #include <stdarg.h>
 /**
  * print_all - prints anything.
- * @format:  list of types of arguments
+ * @format: list of types of arguments
  * Return: void.
  */
 void print_all(const char * const format, ...)
@@ -12,7 +12,7 @@ int flag = 0;
 unsigned int i = 0;
 va_list ptr;
 va_start(ptr, format);
-while (format[i] && format)
+while (format && format[i])
 {
 switch (format[i])
 {
