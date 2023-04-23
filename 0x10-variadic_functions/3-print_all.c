@@ -33,7 +33,7 @@ flag = 1;
 s = va_arg(ptr, char *);
 if (s == NULL)
 s = "(nil)";
-printf("%s ", s);
+printf("%s", s);
 break;
 }
 if (format[i + 1] && flag)
