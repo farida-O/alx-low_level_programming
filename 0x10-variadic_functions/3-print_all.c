@@ -12,6 +12,8 @@ int flag = 0;
 unsigned int i = 0;
 va_list ptr;
 va_start(ptr, format);
+if (format)
+{
 while (format[i])
 {
 switch (format[i])
@@ -42,5 +44,6 @@ i++;
 flag = 0;
 }
 printf("\n");
+}
 va_end(ptr);
 }
