@@ -12,7 +12,7 @@ int flag = 0;
 unsigned int i = 0;
 va_list ptr;
 va_start(ptr, format);
-while (format[i])
+while (format[i] && format)
 {
 switch (format[i])
 {
