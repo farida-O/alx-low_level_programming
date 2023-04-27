@@ -13,9 +13,9 @@ while (h != NULL)
 {
 num += 1;
 if (current ->str == NULL)
-printf("[0] (nil)");   
+printf("[0] (nil)\n");   
 else
-printf("[%d] %s", current->len, current->str);
+printf("[%d] %s\n", current->len, current->str);
 current = current->next;
 }
 return (num);
