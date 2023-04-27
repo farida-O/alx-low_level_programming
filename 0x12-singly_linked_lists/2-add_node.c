@@ -7,8 +7,8 @@
  */
 list_t *add_node(list_t **head, const char *str)
 {
-list_t current;
-current.str = strdup(str);
-current.next = *head;
-return (&current);
+list_t *current;
+current->str = strdup(str);
+current->next = *head;
+return (current);
 }
