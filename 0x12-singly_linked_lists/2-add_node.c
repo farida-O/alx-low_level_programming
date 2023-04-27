@@ -16,7 +16,7 @@ if (current == NULL)
 free(current);
 return (NULL);
 }
-current->str = malloc(strlen(str) + 1);
+current->str = malloc(sizeof(str) + 1);
 if (current->str == NULL)
 {
 free(current->str);
