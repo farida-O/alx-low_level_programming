@@ -13,11 +13,14 @@ list_t *current;
 current = malloc(sizeof(list_t));
 if (current == NULL)
 {
+free(current);
 return (NULL);
 }
 current->str = malloc(strlen(str) + 1);
 if (current->str == NULL)
 {
+free(current->str);
+free(current);
 return (NULL);
 }
 current->str = strdup(str);
