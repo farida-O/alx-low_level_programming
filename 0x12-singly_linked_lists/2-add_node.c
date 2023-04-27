@@ -25,5 +25,6 @@ return (NULL);
 }
 current->str = strdup(str);
 current->next = *head;
+*head = current;
 return (current);
 }
