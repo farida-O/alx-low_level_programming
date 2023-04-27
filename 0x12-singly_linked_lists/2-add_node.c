@@ -1,13 +1,16 @@
 #include <stdio.h>
 #include "lists.h"
 /**
- * list_len - prints anything.
- * @h: list head.
- * Return:  the number of nodes.
+ * add_node - prints anything.
+ * @head: list head.
+ * @str: string
+ * Return: pointer to the new head.
  */
 list_t *add_node(list_t **head, const char *str)
 {
 list_t *current;
+current = malloc(sizeof(list_t));
+current->str = malloc(sizeof(str));
 current->str = strdup(str);
 current->next = *head;
 return (current);
