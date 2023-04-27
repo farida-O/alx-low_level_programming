@@ -12,8 +12,8 @@ const list_t *current = h;
 while (current != NULL)
 {
 num += 1;
-if (current ->str == NULL)
-printf("[0] (nil)\n");   
+if (current->str == NULL)
+printf("[0] (nil)\n");
 else
 printf("[%d] %s\n", current->len, current->str);
 current = current->next;
