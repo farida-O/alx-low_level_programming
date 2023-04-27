@@ -24,6 +24,7 @@ free(current);
 return (NULL);
 }
 current->str = strdup(str);
+current->len = strlen(str);
 current->next = *head;
 *head = current;
 return (current);
