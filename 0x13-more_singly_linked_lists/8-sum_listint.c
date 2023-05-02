@@ -12,8 +12,8 @@ int sum = 0;
 listint_t *current = head;
 while (current != NULL)
 {
-current = current->next;
 sum += current->n;
+current = current->next;
 }
 return (sum);
 }
