@@ -5,6 +5,7 @@
  * insert_nodeint_at_index - return nth node.
  * @head: list head.
  * @idx: target node index
+ * @n: nth node content
  * Return: void.
  */
 listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
