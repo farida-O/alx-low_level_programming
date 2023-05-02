@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include "lists.h"
 /**
- * free_listint - prints anything.
+ * free_listint2 - prints anything.
  * @head: list head.
  * Return: void.
  */
