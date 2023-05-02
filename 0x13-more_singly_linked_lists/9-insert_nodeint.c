@@ -2,20 +2,29 @@
 #include <stdlib.h>
 #include "lists.h"
 /**
- * get_nodeint_at_index - return nth node.
+ * insert_nodeint_at_index - return nth node.
  * @head: list head.
- * @index: target node index
+ * @idx: target node index
  * Return: void.
  */
-listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
+listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 {
-listint_t *current = head;
+listint_t *prev;
+listint_t *new;
+listint_t *current = *head;
 unsigned int i = 1;
-for (; i <= index; i++)
+for (; i <= idx; i++)
 {
 if (current == NULL)
 return (NULL);
+prev = current;
 current = current->next;
 }
-return (current);
+new = malloc(sizeof(listint_t));
+if (!new)
+return (NULL);
+new->n = n;
+prev->next = new;
+new->next = current;
+return (new);
 }
