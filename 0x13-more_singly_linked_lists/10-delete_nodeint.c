@@ -7,7 +7,7 @@
  * @idx: target node index
  * Return: void.
  */
-int delete_nodeint_at_index(listint_t **head, unsigned int index);
+int delete_nodeint_at_index(listint_t **head, unsigned int index)
 {
 listint_t *prev;
 listint_t *current = *head;
@@ -19,7 +19,7 @@ return (-1);
 prev = current;
 current = current->next;
 }
-if (idx == 0)
+if (index == 0)
 *head = current->next;
 else
 prev->next = current->next;
