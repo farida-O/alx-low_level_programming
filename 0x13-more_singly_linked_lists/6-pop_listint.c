@@ -13,7 +13,7 @@ listint_t *current = *head;
 if (current == NULL)
 return (0);
 *head = (*head)->next;
-n = (*head)->n;
+n = current->n;
 free(current);
 return (n);
 }
