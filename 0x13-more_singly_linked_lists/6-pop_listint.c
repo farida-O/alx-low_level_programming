@@ -12,5 +12,5 @@ listint_t *current = *head;
 int n = (*head)->n;
 current = current->next;
 free(*head);
-return (current);
+return (n);
 }
