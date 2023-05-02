@@ -16,5 +16,5 @@ prev = current;
 current = current->next;
 free(prev);
 }
-head = NULL;
+*head = NULL;
 }
