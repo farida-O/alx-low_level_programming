@@ -24,7 +24,10 @@ new = malloc(sizeof(listint_t));
 if (!new)
 return (NULL);
 new->n = n;
-prev->next = new;
 new->next = current;
+if (i == 0)
+*head = new;
+else
+prev->next = new;
 return (new);
 }
