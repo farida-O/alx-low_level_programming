@@ -25,7 +25,7 @@ if (!new)
 return (NULL);
 new->n = n;
 new->next = current;
-if (i == 0)
+if (idx == 0)
 *head = new;
 else
 prev->next = new;
